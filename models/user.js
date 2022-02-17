@@ -6,6 +6,32 @@ class User extends Model {
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
     }
+    static upvote(body, models) {
+        return models.Vote.create({
+            user_id: body.user_id
+        }).then (() => {
+            return User.findOne({
+                where: {
+                    id: body.user_id
+                },
+                attributes: [
+                    'id',
+                    'username',
+                    'email',
+                    [
+                        sequelize.literal('(SELECT COUNT (*) FROM vote WHERE user.id = vote.user_id)'),
+                        'vote_count'
+                    ]
+                ],
+                include: [
+                    {
+                        model: models.Comment,
+                        attributes: ['id', 'comment_text', 'user_id', 'created_at']
+                    }
+                ]
+            });
+        });
+    }
 }
 
 User.init(
