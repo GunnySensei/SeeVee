@@ -1,3 +1,5 @@
+/* || Default Element Styling */
+
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -9,6 +11,11 @@ html {
   padding: 0;
   margin: 0;
   color: #333;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
 }
 
 a {
@@ -30,16 +37,6 @@ nav {
   align-items: center;
 }
 
-.flex-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  list-style-type: none;
-  font-size: 1vw;
-}
-
 button {
   background-color: #fc2626;
   border: 0;
@@ -55,11 +52,6 @@ button:hover {
   background-color: #df2929;
 }
 
-.post-list {
-  margin: 0;
-  padding: 0;
-}
-
 textarea,
 input {
   padding: 0.5%;
@@ -73,18 +65,6 @@ input:focus {
   border: 1px solid #3486eb;
 }
 
-textarea {
-  min-width: 40%;
-  min-height: 100px;
-}
-
-form > div {
-  margin-bottom: 2%;
-}
-
-form label {
-  display: block;
-}
 
 header {
   border-bottom: 1px solid #1c326b;
@@ -100,9 +80,24 @@ header h1 {
   font-size: 1em;
 }
 
-main {
-  flex: 1;
-  padding: 2% 4%;
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
+
+/* || Class Stylizing */
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1vw;
 }
 
 .btn-no-style {
@@ -196,6 +191,13 @@ main {
   max-width: 18%;
 }
 
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* || Homepage Specific */
+
 .homepage-section {
   display: flex;
   align-items: center;
@@ -218,6 +220,13 @@ main {
   width: 48%;
   padding-top: 1.5%;
 }
+
+.pod-title h2 {
+  position: absolute;
+  top: 0px;
+  color: white;
+}
+
 
 .challenges {
   display: flex;
@@ -259,17 +268,4 @@ main {
   color: white;
 }
 
-.pod-title h2 {
-  position: absolute;
-  top: 0px;
-  color: white;
-}
 
-
-footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
-}
