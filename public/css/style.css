@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body,
@@ -7,29 +8,41 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
   color: #333;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #ffffff;
   font-weight: bold;
   transition: color 0.1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #ffffff;
 }
 
 img {
   max-width: 100%;
 }
 
+nav {
+ align-items: center;
+}
+
+.flex-row {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 button {
-  background-color: #225ca3;
+  background-color: #fc2626;
   border: 0;
-  padding: 1%;
+  padding: .5rem .8rem;
   color: white;
   font-weight: bold;
   transition: background-color 0.1s;
@@ -38,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #df2929;
 }
 
 .post-list {
@@ -82,11 +95,13 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #1c326b;
   display: flex;
+  color: #ffffff;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: #1c326b;
 }
 
 header h1 {
