@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body,
@@ -27,22 +27,23 @@ img {
 }
 
 nav {
- align-items: center;
+  align-items: center;
 }
 
 .flex-row {
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    text-decoration: none;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1vw;
 }
 
 button {
   background-color: #fc2626;
   border: 0;
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
   color: white;
   font-weight: bold;
   transition: background-color 0.1s;
@@ -83,15 +84,6 @@ form > div {
 
 form label {
   display: block;
-}
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -164,6 +156,15 @@ main {
   background-color: #1f9c13;
 }
 
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .comment-form {
   margin-bottom: 5%;
 }
@@ -189,6 +190,10 @@ main {
 
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.logo {
+  max-width: 18%;
 }
 
 footer {
