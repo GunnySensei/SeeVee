@@ -29,6 +29,10 @@
   "bugs": {
     "url": "https://github.com/GunnySensei/project_prestige_worldwide/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/GunnySensei/project_prestige_worldwide#readme",
   "devDependencies": {}
+=======
+  "homepage": "https://github.com/GunnySensei/project_prestige_worldwide#readme"
+>>>>>>> 896f05ff657216c5433c208c767adf1381912ff3
 }
