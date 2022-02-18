@@ -2,7 +2,10 @@
   "name": "project_prestige_worldwide",
   "version": "1.0.0",
   "main": "server.js",
-  "repository": "git@github.com:GunnySensei/project_prestige_worldwide.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GunnySensei/project_prestige_worldwide.git"
+  },
   "author": "GunnySensei <gunnerwagoner@hotmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -15,10 +18,17 @@
     "express-session": "^1.17.2",
     "jest": "^27.5.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.16.1"
+    "sequelize": "^6.16.1",
+    "yarn": "^1.22.17"
   },
   "scripts": {
     "test": "jest",
     "start": "node server.js"
-  }
+  },
+  "description": "This project is licensed under MIT.   ![License](https://img.shields.io/badge/License-MIT-blue.svg)",
+  "bugs": {
+    "url": "https://github.com/GunnySensei/project_prestige_worldwide/issues"
+  },
+  "homepage": "https://github.com/GunnySensei/project_prestige_worldwide#readme",
+  "devDependencies": {}
 }
