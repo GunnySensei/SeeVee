@@ -196,6 +196,76 @@ main {
   max-width: 18%;
 }
 
+.homepage-section {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-article {
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.5%;
+}
+
+.homepage-hero {
+  width: 97.35%;
+  padding-top: 1.5%;
+}
+
+.pods {
+  width: 48%;
+  padding-top: 1.5%;
+}
+
+.challenges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/coding.jpg);
+  background-size: cover;
+  height: 350px;
+  color: white;
+}
+
+.experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/interview.jpg);
+  background-size: cover;
+  height: 350px;
+  color: white;
+}
+
+.resumes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/resume.jpg);
+  background-size: cover;
+  height: 350px;
+  color: white;
+}
+
+.jobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/jobs.jpg);
+  background-size: cover;
+  height: 350px;
+  color: white;
+}
+
+.pod-title h2 {
+  position: absolute;
+  top: 0px;
+  color: white;
+}
+
+
 footer {
   border-top: 1px solid #ccc;
   display: flex;
