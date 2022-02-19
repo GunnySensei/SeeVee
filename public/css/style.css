@@ -1,6 +1,6 @@
 /* || Default Element Styling */
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -10,7 +10,6 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  color: #333;
 }
 
 main {
@@ -88,6 +87,15 @@ footer {
   font-size: 110%;
 }
 
+p {
+  font-size: 1rem;
+  color: #333333;
+}
+
+h1, h2, h3 {
+  margin: 0px;
+}
+
 /* || Class Stylizing */
 
 .flex-row {
@@ -98,6 +106,10 @@ footer {
   text-decoration: none;
   list-style-type: none;
   font-size: 1vw;
+}
+
+.border-round {
+  border-radius: 9px;
 }
 
 .btn-no-style {
@@ -252,4 +264,32 @@ footer {
   background-size: cover;
 }
 
+.challenges-hero {
+  width: 97.35%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/coding.jpg);
+  background-size: cover;
+  font-size: 4rem;
+  height: 200px;
+}
 
+.single-page {
+  padding: 2.5rem;
+}
+
+.content-card {
+  width: 97.35%;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  padding: 2.5rem;
+  display: flex;
+  align-items:flex-start;
+}
+
+.post-image {
+  padding-right: 2rem;
+  width: 35%;
+}
+
+.post-text {
+ width: 65%;
+}
