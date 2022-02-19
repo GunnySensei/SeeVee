@@ -1,37 +1,36 @@
-<html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just Tech News</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
+  <article class="homepage-article">
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>
-          <a href="/">Just Tech News</a>
-        </h1>
-        <nav>
-          {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">logout</button>
-          {{else}}
-            <a href="/login">login</a>
-          {{/if}}
-        </nav>
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
-        Thanks for visiting!
-      </footer>
-    </div>
+      <section class="homepage-hero homepage-image">
+        <h1>WELCOME TO PRESTIGE WORLDWIDE</h1>
+      </section>
 
-    {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}}
-  </body>
+      <section id="challenges" class="pods">
+        <div class="challenges homepage-image">
+          <h2>CHALLENGES</h2>
+          <a></a>
+        </div>
+      </section>
 
-</html>
+      <section id="experiences" class="pods">
+        <div class="experiences homepage-image">  
+          <h2>EXPERIENCES</h2>
+          <a></a>
+        </div>
+      </section>
+
+      <section id="resumes" class="pods">
+        <div class="resumes homepage-image">  
+          <h2>RÉSUMÉS</h2>
+          <a></a>
+        </div>
+      </section>
+
+      <section id="jobs" class="pods">
+        <div class="jobs homepage-image">
+          <h2>JOBS</h2>
+          <a></a>
+        </div>
+      </section>
+
+    </article>

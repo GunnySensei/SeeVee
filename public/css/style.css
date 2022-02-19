@@ -211,69 +211,45 @@ footer {
   padding: 1.5%;
 }
 
-.homepage-hero {
-  width: 97.35%;
-  padding-top: 1.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/prestige-hero-background2.jpg);
-  background-size: cover;
-  font-size: 2rem;
-  color: white;
-  height: 350px;
-}
-
 .pods {
   width: 48%;
   padding-top: 1.5%;
 }
 
-.pod-title h2 {
-  position: absolute;
-  top: 0px;
-  color: white;
-}
-
-
-.challenges {
+.homepage-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/coding.jpg);
-  background-size: cover;
   height: 350px;
   color: white;
+}
+
+.homepage-hero {
+  width: 97.35%;
+  padding-top: 1.5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/prestige-hero-background2.jpg);
+  background-size: cover;
+  font-size: 2rem;
+}
+
+.challenges {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/coding.jpg);
+  background-size: cover;
 }
 
 .experiences {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/interview.jpg);
   background-size: cover;
-  height: 350px;
-  color: white;
 }
 
 .resumes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/resume.jpg);
   background-size: cover;
-  height: 350px;
-  color: white;
 }
 
 .jobs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/jobs.jpg);
   background-size: cover;
-  height: 350px;
-  color: white;
 }
 
 
