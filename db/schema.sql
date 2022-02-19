@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS boats-n-hoes;
+DROP DATABASE IF EXISTS boats_n_hoes;
 
-CREATE DATABASE boats-n-hoes;
+CREATE DATABASE boats_n_hoes;
