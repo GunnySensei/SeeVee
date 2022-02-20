@@ -1,6 +1,8 @@
 /* || Default Element Styling */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -67,7 +69,6 @@ input:focus {
   border: 1px solid #3486eb;
 }
 
-
 header {
   border-bottom: 1px solid #1c326b;
   display: flex;
@@ -88,9 +89,9 @@ footer {
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
-  width:100%;
-  height:60px;   /* Height of the footer */
-  background:#7098d6;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: #7098d6;
   margin-top: auto;
 }
 
@@ -99,7 +100,9 @@ p {
   color: #333333;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0px;
 }
 
@@ -208,6 +211,7 @@ h1, h2, h3 {
 
 .logo {
   max-width: 18%;
+  padding: 0.5rem;
 }
 
 .post-list {
@@ -246,36 +250,52 @@ h1, h2, h3 {
 .homepage-hero {
   width: 97.35%;
   padding-top: 1.5%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/prestige-hero-background2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../../assets/images/prestige-hero-background2.jpg);
   background-size: cover;
   font-size: 2rem;
 }
 
 .challenges {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/coding.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/coding.jpg);
   background-size: cover;
 }
 
 .experiences {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/interview.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/interview.jpg);
   background-size: cover;
 }
 
 .resumes {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/resume.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/resume.jpg);
   background-size: cover;
 }
 
 .jobs {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/jobs.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/jobs.jpg);
   background-size: cover;
 }
 
 .challenges-hero {
   width: 97.35%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/coding.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/coding.jpg);
   background-size: cover;
   font-size: 3rem;
+  height: 200px;
+}
+
+.experiences-hero {
+  width: 97.35%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/interview.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 4rem;
   height: 200px;
 }
 
@@ -290,7 +310,7 @@ h1, h2, h3 {
   border-radius: 9px;
   padding: 2.5rem;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-bottom: 1rem;
 }
 
@@ -300,5 +320,12 @@ h1, h2, h3 {
 }
 
 .post-text {
- width: 65%;
+  width: 65%;
+}
+
+.footer-a {
+  color: #7098d6;
+  font-weight: normal;
+  font-size: 1rem;
+  padding-left: 1rem;
 }

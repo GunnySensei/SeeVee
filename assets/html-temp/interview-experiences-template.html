@@ -13,30 +13,32 @@
   </head>
   <body>
     <!-- header bar, navigation-->
-    <header>
-      <a href="./index.html">
-        <img
-          class="logo"
-          src="../images/PresWorld-LogoColor.png"
-          alt="hot bodied knight boi"
-        />
-      </a>
-      <nav>
+    <header class="container-fluid d-flex">
+      <h1 class=" ">
+        <a href="./index.html">
+          <img
+            class="logo"
+            src="../images/PresWorld-LogoColor.png"
+            alt="hot bodied knight boi"
+          />
+        </a>
+      </h1>
+      <nav class=" ">
         <ul class="flex-row">
-          <li>
+          <li class=" ">
             <a href="#coding-challenge" style="text-decoration: none"
               >CHALLENGES</a
             >
           </li>
-          <li>
+          <li class=" ">
             <a href="#interview-experiences" style="text-decoration: none"
               >EXPERIENCES</a
             >
           </li>
-          <li>
+          <li class=" ">
             <a href="#resumes" style="text-decoration: none">RESUMES</a>
           </li>
-          <li>
+          <li class=" ">
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
           <li>
@@ -48,8 +50,8 @@
     <!-- End Header-->
 
     <article class="homepage-article">
-      <section class="challenges-hero homepage-image">
-        <h1>CODING CHALLENGES</h1>
+      <section class="experiences-hero homepage-image">
+        <h1>INTERVIEW DETAILS</h1>
       </section>
       <div class="single-page">
         <h2>TITLE TEXT</h2>
@@ -59,16 +61,10 @@
           Pellentesque nec nam aliquam sem. Velit egestas dui id ornare arcu
           odio.
         </p>
-        <button>SUBMIT CHALLENGE</button>
+        <button>VIEW INTERVIEW DETAILS</button>
       </div>
       <section class="content-card flex-row">
-        <div class="post-image">
-          <img
-            class="border-round"
-            src="../images/app-screenshot.jpg"
-            alt="apps ready to play"
-          />
-        </div>
+        =
         <div class="post-text">
           <h2>TITLE TEXT</h2>
           <p>
@@ -77,13 +73,25 @@
             Pellentesque nec nam aliquam sem. Velit egestas dui id ornare arcu
             odio.
           </p>
-          <button>HAVE AT YE, CHALLENGE!</button>
+          <button>VIEW INTERVIEW DETAILS</button>
+        </div>
+        <!-- using Clearbit logo api needs to take in website name + .com i.e. spotify.com
+                size constraints + color contraints as follows: <img src="https://logo.clearbit.com/spotify.com?size=80&grayscale=true" /> -->
+        <div class="post-image">
+          <img
+            class="border-round"
+            src="https://logo.clearbit.com/spotify.com?size=180"
+            alt="company logo here"
+          />
         </div>
       </section>
     </article>
 
     <footer>
-      <section id="footer">THANKS FOR VISITING!</section>
+      <section id="footer">Thanks for visiting!</section>
+      <a class="footer-a" href="https://clearbit.com">
+        Logos provided by Clearbit</a
+      >
     </footer>
   </body>
 </html>
