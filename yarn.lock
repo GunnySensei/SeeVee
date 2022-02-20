@@ -867,7 +867,7 @@ balanced-match@^1.0.0:
 
 bcrypt@^5.0.1:
   version "5.0.1"
-  resolved "https://registry.npmjs.org/bcrypt/-/bcrypt-5.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/bcrypt/-/bcrypt-5.0.1.tgz#f1a2c20f208e2ccdceea4433df0c8b2c54ecdf71"
   integrity sha512-9BTgmrhZM2t1bNuDtrtIMVSmmxZBrJ71n8Wg+YgdjHuIWYF7SjjmCPZFB+/5i/o/PIeRpwVJR3P+NrpIItUjqw==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.0"
@@ -1064,7 +1064,7 @@ concat-map@0.0.1:
 
 connect-session-sequelize@^7.1.2:
   version "7.1.2"
-  resolved "https://registry.npmjs.org/connect-session-sequelize/-/connect-session-sequelize-7.1.2.tgz"
+  resolved "https://registry.yarnpkg.com/connect-session-sequelize/-/connect-session-sequelize-7.1.2.tgz#03ae9a1bd2221526c63a66959b6ddd18599be2ac"
   integrity sha512-g24R4u6IfowKl6ApklvkAaKHNtzaKqbwqXkrgkKgkCzlCxdRPZ7qgQ8tWWmeUuVq6GejT1B7M0X8CC4rGfMIRg==
   dependencies:
     debug "^4.1.1"
