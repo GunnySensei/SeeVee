@@ -93,6 +93,10 @@ footer {
   height: 60px; /* Height of the footer */
   background: #7098d6;
   margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 p {
@@ -323,7 +327,7 @@ h3 {
 }
 
 .footer-a {
-  color: #7098d6;
+  color: #ffffff;
   font-weight: normal;
   font-size: 1rem;
   padding-left: 1rem;
