@@ -23,7 +23,7 @@ Job.init(
             type: DataTypes.STRING
         },
         location: {
-            type: DataTypes.GEOGRAPHY
+            type: DataTypes.STRING
         },
         job_url: {
             type: DataTypes.STRING,
