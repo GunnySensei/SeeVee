@@ -93,13 +93,10 @@ footer {
   height: 60px; /* Height of the footer */
   background: #7098d6;
   margin-top: auto;
-<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
-=======
->>>>>>> e64cf9885ec20f61531b91b5e40a64e8ba49cb10
 }
 
 p {
@@ -218,7 +215,6 @@ h3 {
 
 .logo {
   max-width: 18%;
-  padding: 0.5rem;
 }
 
 .post-list {
@@ -335,4 +331,7 @@ h3 {
   font-weight: normal;
   font-size: 1rem;
   padding-left: 1rem;
+}
+
+.pulled-company-logo {
 }
