@@ -80,7 +80,7 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 footer {
@@ -108,6 +108,24 @@ h1,
 h2,
 h3 {
   margin: 0px;
+}
+
+input::-webkit-input-placeholder {
+  color: #b2b2b2 !important;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b2b2b2 !important;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b2b2b2 !important;
+}
+
+input:-ms-input-placeholder {
+  color: #b2b2b2 !important;
 }
 
 /* || Class Stylizing */
@@ -252,6 +270,19 @@ h3 {
   padding: 1.5%;
 }
 
+.login-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5%;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-title {
+  padding-bottom: 15px;
+}
+
 .pods {
   width: 85%;
   padding-top: 1.5%;
@@ -332,6 +363,25 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.login-card {
+  width: 500px;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.login-body {
+  background-image: url(../../assets/images/PresWorld-LogoBW-2000x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  background-position: -500px 100px;
+}
+
 .post-image {
   padding-right: 2rem;
   width: 35%;
@@ -339,6 +389,18 @@ h3 {
 
 .post-text {
   width: 65%;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 0;
+  font-weight: 500;
+}
+
+.margin-top {
+  margin-top: 10px;
 }
 
 .footer-a {
