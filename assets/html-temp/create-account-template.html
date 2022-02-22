@@ -11,7 +11,7 @@
     />
     <title>Prestige Worldwide</title>
   </head>
-  <body>
+  <body class="login-body">
     <!-- header bar, navigation-->
     <header class="container-fluid d-flex">
       <a href="./index.html">
@@ -44,35 +44,51 @@
     </header>
     <!-- End Header-->
 
-    <article class="homepage-article">
-      <section class="homepage-hero homepage-image">
-        <h1>WELCOME TO PRESTIGE WORLDWIDE</h1>
-      </section>
-
-      <section id="challenges" class="pods">
-        <div class="challenges homepage-image">
-          <h2>CHALLENGES</h2>
-          <a></a>
+    <article class="login-article">
+      <h2 class="login-title">Create an account</h2>
+      <section class="login-card flex-row">
+        <div class="post-text">
+          <h3>Email Address:</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              id="email"
+              name="email"
+              class="form-input"
+            />
+          </form>
+          <h3 class="margin-top">Password:</h3>
+          <form>
+            <input
+              type="text"
+              placeholder="Enter your password"
+              id="password"
+              name="password"
+              class="form-input"
+            />
+          </form>
+          <h3 class="margin-top">Confirm Password:</h3>
+          <form>
+            <input
+              type="text"
+              placeholder="Confirm your password"
+              id="confirm-password"
+              name="confirm-password"
+              class="form-input"
+            />
+          </form>
         </div>
-      </section>
-
-      <section id="experiences" class="pods">
-        <div class="experiences homepage-image">
-          <h2>EXPERIENCES</h2>
-          <a></a>
-        </div>
-      </section>
-
-      <section id="jobs" class="pods">
-        <div class="jobs homepage-image">
-          <h2>JOBS</h2>
-          <a></a>
-        </div>
+        <button class="login-btn margin-top">CREATE AN ACCOUNT</button>
+        <button class="login-btn margin-top">LOGIN</button>
       </section>
     </article>
 
     <footer>
       <section id="footer">Thanks for visiting!</section>
+      <a class="footer-a" href="https://clearbit.com">
+        Logos provided by Clearbit</a
+      >
     </footer>
   </body>
 </html>
