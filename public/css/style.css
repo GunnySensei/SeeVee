@@ -225,16 +225,13 @@ h3 {
 
 /* || Homepage Specific */
 
-/* .homepage-section {
-  display: flex;
-  align-items: center;
-} */
-
 .homepage-article {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 1.5%;
+  align-items: center;
 }
 
 .challenges-article {
@@ -256,7 +253,7 @@ h3 {
 }
 
 .pods {
-  width: 48%;
+  width: 85%;
   padding-top: 1.5%;
 }
 
@@ -351,7 +348,7 @@ h3 {
   padding-left: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .homepage-article {
     display: flex;
     flex-direction: column;
@@ -372,4 +369,4 @@ h3 {
     width: 97.35%;
     padding-top: 1.5%;
   }
-}
+} */
