@@ -27,6 +27,7 @@ Comment.init(
         },
         code_id: {
             type: DataTypes.INTEGER,
+            allowNull: true,
             references: {
                 model: 'code',
                 key: 'id'
@@ -34,6 +35,7 @@ Comment.init(
         },
         job_id: {
             type: DataTypes.INTEGER,
+            allowNull: true,
             references: {
                 model: 'job',
                 key: 'id'
