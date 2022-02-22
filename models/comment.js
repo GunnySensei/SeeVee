@@ -25,14 +25,21 @@ Comment.init(
                 key: 'id'
             }
         },
-        post_id: {
+        code_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             references: {
-                model: 'post',
+                model: 'code',
+                key: 'id'
+            }
+        },
+        job_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'job',
                 key: 'id'
             }
         }
+        
     },
     {
         sequelize,

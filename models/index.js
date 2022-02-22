@@ -1,5 +1,5 @@
 const User = require('./user');
-const Post = require('./post');
+const Code = require('./code');
 const Job = require('./job');
 
 User.hasMany(Job);
@@ -11,4 +11,4 @@ Job.belongsTo(User, {
 
 
 
-module.exports = { User, Post, Job };
+module.exports = { User, Code, Job };
