@@ -13,7 +13,7 @@
     <header class="container-fluid d-flex">
       <h1 class=" ">
         <a href="./index.html" >
-            <img class="logo" src="../images/PresWorld-Logo or.png" alt="hot bodied knight boi"/>
+            <img class="logo" src="../images/PresWorld-LogoColor.png" alt="hot bodied knight boi"/>
         </a>
       </h1>
       <nav class=" ">
@@ -30,30 +30,55 @@
           <li class=" ">
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
-          {{#if !loggedIn}}
           <li>
-              <button id="logout-btn" class="login-btn">LOGOUT</button>
+              <button class="login-btn">LOGIN</button>
           </li>
-          {{else}}
-          <li>
-              <button id="logout-btn" class="login-btn">LOGOUT</button>
-          </li>
-          {{/if}}
         </ul>
       </nav>
     </header>
     <!-- End Header-->
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
+
+    <article class="homepage-article">
+
+      <section class="homepage-hero homepage-image">
+        <h1>WELCOME TO PRESTIGE WORLDWIDE</h1>
+      </section>
+
+      <section id="challenges" class="pods">
+        <div class="challenges homepage-image">
+          <h2>CHALLENGES</h2>
+          <a></a>
+        </div>
+      </section>
+
+      <section id="experiences" class="pods">
+        <div class="experiences homepage-image">  
+          <h2>EXPERIENCES</h2>
+          <a></a>
+        </div>
+      </section>
+
+      <section id="resumes" class="pods">
+        <div class="resumes homepage-image">  
+          <h2>RÉSUMÉS</h2>
+          <a></a>
+        </div>
+      </section>
+
+      <section id="jobs" class="pods">
+        <div class="jobs homepage-image">
+          <h2>JOBS</h2>
+          <a></a>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <section id="footer">
         Thanks for visiting!
-      </footer>
-    </div>
+      </section>
+    </footer>
 
-    {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}}
   </body>
-
 </html>
