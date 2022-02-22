@@ -93,13 +93,10 @@ footer {
   height: 60px; /* Height of the footer */
   background: #7098d6;
   margin-top: auto;
-<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
-=======
->>>>>>> e64cf9885ec20f61531b91b5e40a64e8ba49cb10
 }
 
 p {
@@ -228,15 +225,32 @@ h3 {
 
 /* || Homepage Specific */
 
-.homepage-section {
+/* .homepage-section {
   display: flex;
   align-items: center;
-}
+} */
 
 .homepage-article {
   display: flex;
-  /* gap: 1rem; */
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.5%;
+}
+
+.challenges-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5%;
+}
+
+.interview-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   padding: 1.5%;
 }
@@ -296,13 +310,13 @@ h3 {
   height: 200px;
 }
 
-.experiences-hero {
+.interview-hero {
   width: 97.35%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../../assets/images/interview.jpg);
   background-size: cover;
   background-position: center;
-  font-size: 4rem;
+  font-size: 3rem;
   height: 200px;
 }
 
@@ -335,4 +349,27 @@ h3 {
   font-weight: normal;
   font-size: 1rem;
   padding-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .homepage-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5%;
+  }
+
+  .homepage-hero {
+    width: 97.35%;
+    padding-top: 1.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(../../assets/images/prestige-hero-background2.jpg);
+    background-size: cover;
+    font-size: 2rem;
+  }
+
+  .pods {
+    width: 97.35%;
+    padding-top: 1.5%;
+  }
 }
