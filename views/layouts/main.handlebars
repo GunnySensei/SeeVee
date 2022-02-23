@@ -32,11 +32,13 @@
           </li>
           {{!-- {{#if !loggedIn}} --}}
           <li>
-              <button id="logout-btn" class="login-btn">LOGOUT</button>
+              <button id="logout" class="login-btn">LOGOUT</button>
           </li>
           {{!-- {{else}} --}}
           <li>
-              <button id="logout-btn" class="login-btn">LOGIN</button>
+            <a href="/login">
+              <button id="login" class="login-btn">LOGIN</button>
+            </a>
           </li>
           {{!-- {{/if}} --}}
         </ul>
