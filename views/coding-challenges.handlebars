@@ -1,9 +1,10 @@
-<article class="homepage-article">
+<article class="challenges-article">
 
   <section class="challenges-hero homepage-image">
     <h1>CODING CHALLENGES</h1>
   </section>
-    <section>
+    <section class='content-card flex-row'>
+      <div class='post-text'>
         <h2>CHALLENGES</h2>
         <ol>
             {{#each challenges as |challenge|}}
@@ -12,6 +13,7 @@
             </li>
             {{/each}}
         </ol>
+        </div>
     </section>
 
 </article>
