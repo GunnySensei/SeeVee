@@ -7,8 +7,8 @@ const jobRoutes = require('./job-routes');
 const interviewRoutes = require('./interview-routes');
 
 router.use('/users', userRoutes);
-router.use('/code', codeRoutes);
-router.use('/comment', commentRoutes);
+router.use('/codes', codeRoutes);
+router.use('/comments', commentRoutes);
 router.use('/jobs', jobRoutes);
 router.use('/interviews', interviewRoutes);
 
