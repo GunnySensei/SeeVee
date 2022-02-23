@@ -9,6 +9,8 @@ User.hasMany(Code);
 
 User.hasMany(Job);
 
+User.hasMany(Interview);
+
 User.hasMany(Comment, {
     foreignKey: 'user_id'
 });
@@ -25,7 +27,13 @@ User.belongsToMany(Job, {
     foreignKey: 'user_id'
 });
 
-User.hasMany(Interview);
+User.belongsToMany(Interview, {
+    through: Comment,
+    as: 'user_interview',
+    foreignKey: 'user_id'
+});
+
+
 
 // Code associations
 Code.belongsTo(User, {
@@ -58,7 +66,19 @@ Job.hasMany(Comment, {
 });
 
 // Interview associations
-Interview.belongsTo(User);
+Interview.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+// Interview.belongsToMany(User, {
+//     through: Comment,
+//     as: 'interview_comment',
+//     foreignKey: 'interview_id'
+// });
+
+Interview.hasMany(Comment, {
+    foreignKey: 'interview_id'
+});
 
 // Comment associations
 Comment.belongsTo(User, {
@@ -73,6 +93,9 @@ Comment.belongsTo(Job, {
     foreignKey: 'job_id'
 });
 
+Comment.belongsTo(Interview, {
+    foreignKey: 'interview_id'
+});
 
 
 
