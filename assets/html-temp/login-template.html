@@ -11,9 +11,9 @@
     />
     <title>Prestige Worldwide</title>
   </head>
-  <body>
+  <body class="login-body">
     <!-- header bar, navigation-->
-    <header>
+    <header class="container-fluid d-flex">
       <a href="./index.html">
         <img
           class="logo"
@@ -21,19 +21,19 @@
           alt="hot bodied knight boi"
         />
       </a>
-      <nav>
+      <nav class=" ">
         <ul class="flex-row">
-          <li>
+          <li class=" ">
             <a href="#coding-challenge" style="text-decoration: none"
               >CHALLENGES</a
             >
           </li>
-          <li>
+          <li class=" ">
             <a href="#interview-experiences" style="text-decoration: none"
               >EXPERIENCES</a
             >
           </li>
-          <li>
+          <li class=" ">
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
           <li>
@@ -44,43 +44,41 @@
     </header>
     <!-- End Header-->
 
-    <article class="challenges-article">
-      <section class="challenges-hero homepage-image">
-        <h1>CODING CHALLENGES</h1>
-      </section>
-      <div class="single-page">
-        <h2>WELCOME TO THE DAILY CODING CHALLENGE</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Pellentesque nec nam aliquam sem. Velit egestas dui id ornare arcu
-          odio.
-        </p>
-        <button>SUBMIT CHALLENGE</button>
-      </div>
-      <section class="content-card flex-row">
-        <div class="post-image">
-          <img
-            class="border-round"
-            src="../images/app-screenshot.jpg"
-            alt="apps ready to play"
-          />
-        </div>
+    <article class="login-article">
+      <h2 class="login-title">Sign in to your account</h2>
+      <section class="login-card flex-row">
         <div class="post-text">
-          <h2>TITLE TEXT</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Pellentesque nec nam aliquam sem. Velit egestas dui id ornare arcu
-            odio.
-          </p>
-          <button>HAVE AT YE, CHALLENGE!</button>
+          <h3>Email Address:</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              id="email"
+              name="email"
+              class="form-input"
+            />
+          </form>
+          <h3 class="margin-top">Password:</h3>
+          <form>
+            <input
+              type="text"
+              placeholder="Enter your password"
+              id="password"
+              name="password"
+              class="form-input"
+            />
+          </form>
         </div>
+        <button class="login-btn margin-top">LOGIN</button>
+        <button class="login-btn margin-top">CREATE AN ACCOUNT</button>
       </section>
     </article>
 
     <footer>
-      <section id="footer">THANKS FOR VISITING!</section>
+      <section id="footer">Thanks for visiting!</section>
+      <a class="footer-a" href="https://clearbit.com">
+        Logos provided by Clearbit</a
+      >
     </footer>
   </body>
 </html>

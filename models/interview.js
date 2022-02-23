@@ -1,27 +1,25 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Post extends Model {}
+class Interview extends Model {}
 
-// Post model
-Post.init(
+Interview.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             primaryKey: true,
             autoIncrement: true
+        },
+        company: {
+            type: DataTypes.STRING
         },
         title: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
+        description: {
             type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isUrl: true
-            }
+            allowNull: false
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -35,8 +33,8 @@ Post.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'post'
+        modelName: 'interview'
     }
-)
+);
 
-module.exports = Post;
+module.exports = Interview;

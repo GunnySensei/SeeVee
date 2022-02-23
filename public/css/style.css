@@ -80,7 +80,7 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 footer {
@@ -108,6 +108,24 @@ h1,
 h2,
 h3 {
   margin: 0px;
+}
+
+input::-webkit-input-placeholder {
+  color: #b2b2b2 !important;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b2b2b2 !important;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b2b2b2 !important;
+}
+
+input:-ms-input-placeholder {
+  color: #b2b2b2 !important;
 }
 
 /* || Class Stylizing */
@@ -224,21 +242,48 @@ h3 {
 
 /* || Homepage Specific */
 
-.homepage-section {
+.homepage-article {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.5%;
   align-items: center;
 }
 
-.homepage-article {
+.challenges-article {
   display: flex;
-  /* gap: 1rem; */
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   padding: 1.5%;
 }
 
+.interview-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5%;
+}
+
+.login-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5%;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-title {
+  padding-bottom: 15px;
+}
+
 .pods {
-  width: 48%;
+  width: 85%;
   padding-top: 1.5%;
 }
 
@@ -292,13 +337,13 @@ h3 {
   height: 200px;
 }
 
-.experiences-hero {
+.interview-hero {
   width: 97.35%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../../assets/images/interview.jpg);
   background-size: cover;
   background-position: center;
-  font-size: 4rem;
+  font-size: 3rem;
   height: 200px;
 }
 
@@ -317,6 +362,25 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.login-card {
+  width: 500px;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.login-body {
+  background-image: url(../../assets/images/PresWorld-LogoBW-2000x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  background-position: -500px 100px;
+}
+
 .post-image {
   padding-right: 2rem;
   width: 35%;
@@ -326,6 +390,18 @@ h3 {
   width: 65%;
 }
 
+.form-input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 0;
+  font-weight: 500;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
 .footer-a {
   color: #ffffff;
   font-weight: normal;
@@ -333,5 +409,25 @@ h3 {
   padding-left: 1rem;
 }
 
-.pulled-company-logo {
-}
+/* @media screen and (max-width: 600px) {
+  .homepage-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5%;
+  }
+
+  .homepage-hero {
+    width: 97.35%;
+    padding-top: 1.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(../../assets/images/prestige-hero-background2.jpg);
+    background-size: cover;
+    font-size: 2rem;
+  }
+
+  .pods {
+    width: 97.35%;
+    padding-top: 1.5%;
+  }
+} */
