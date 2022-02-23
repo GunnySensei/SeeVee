@@ -100,7 +100,7 @@ footer {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #333333;
 }
 
@@ -126,6 +126,10 @@ input::-moz-placeholder {
 
 input:-ms-input-placeholder {
   color: #b2b2b2 !important;
+}
+
+ul {
+  text-decoration: none;
 }
 
 /* || Class Stylizing */

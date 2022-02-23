@@ -1,19 +1,22 @@
 <article class="challenges-article">
-
   <section class="challenges-hero homepage-image">
     <h1>CODING CHALLENGES</h1>
   </section>
-    <section class='content-card flex-row'>
-      <div class='post-text'>
-        <h2>CHALLENGES</h2>
-        <ol>
-            {{#each challenges as |challenge|}}
-            <li>
-                {{> code-info challenge}}
-            </li>
-            {{/each}}
-        </ol>
+  <div class='single-page'>
+    <h2>CREATE YOUR OWN CODING CHALLENGES</h2>
+    <p>
+      Help your fellow web developers put their best foot forward by sharing
+      your experiences while interviewing with various prospective employers.
+    </p>
+    <button>VIEW INTERVIEW DETAILS</button>
+  </div>
+  <div class='single-page post-text'>
+    <div>
+        {{#each challenges as |challenge|}}
+        <div>
+            {{> code-info challenge}}
         </div>
-    </section>
-
+        {{/each}}
+    </div>
+  </div>
 </article>
