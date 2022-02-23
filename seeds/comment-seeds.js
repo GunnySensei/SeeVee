@@ -30,19 +30,8 @@ const commentData = [
         user_id: 1,
         code_id: null,
         job_id: 2
-    },
-    {
-        comment_text: 'this sucks ass',
-        user_id: 1,
-        code_id: 2,
-        job_id: null
-    },
-    {
-        comment_text: 'gg!',
-        user_id: 2,
-        code_id: null,
-        job_id: 1
-    },
+    }
+    
 ];
 
 const seedComments = () => Comment.bulkCreate(commentData);

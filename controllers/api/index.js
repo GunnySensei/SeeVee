@@ -6,8 +6,8 @@ const commentRoutes = require('./comment-routes');
 const jobRoutes = require('./job-routes')
 
 router.use('/users', userRoutes);
-router.use('/code', codeRoutes);
-router.use('/comment', commentRoutes);
+router.use('/codes', codeRoutes);
+router.use('/comments', commentRoutes);
 router.use('/jobs', jobRoutes);
 
 module.exports = router;
