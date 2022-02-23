@@ -66,6 +66,14 @@ router.post("/login", (req, res) => {
       res.status(404).json({ messsage: "You know you aint type that right" });
       return;
     }
+
+    const validPassword = dbUserData.checkPassword(req.body.password);
+
+    if (!validPassword) {
+      res.status(400).json({ message: "You know you aint type that right" });
+      return;
+    }
+
     req.session.save(() => {
       req.session.user_id = dbUserData.id;
       req.session.username = dbUserData.username;
