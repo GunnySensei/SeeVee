@@ -12,7 +12,7 @@
     <!-- header bar, navigation-->
     <header class="container-fluid d-flex">
       <h1 class=" ">
-        <a href="./index.html" >
+        <a href="/" >
             <img class="logo" src="images\PresWorld-LogoColor.png" alt="hot bodied knight boi"/>
         </a>
       </h1>
@@ -30,15 +30,17 @@
           <li class=" ">
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
-          {{!-- {{#if !loggedIn}} --}}
+          {{#if loggedIn}}
           <li>
-              <button id="logout-btn" class="login-btn">LOGOUT</button>
+              <button id="logout" class="login-btn">LOGOUT</button>
           </li>
-          {{!-- {{else}} --}}
+          {{else}}
           <li>
-              <button id="logout-btn" class="login-btn">LOGIN</button>
+            <a href="/login">
+              <button id="login" class="login-btn">LOGIN</button>
+            </a>
           </li>
-          {{!-- {{/if}} --}}
+          {{/if}}
         </ul>
       </nav>
     </header>
@@ -51,9 +53,9 @@
       </footer>
     </div>
 
-    {{!-- {{#if loggedIn}} --}}
+    {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
-    {{!-- {{/if}} --}}
+    {{/if}}
   </body>
 
 </html>

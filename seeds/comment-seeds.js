@@ -33,7 +33,22 @@ const commentData = [
         comment_text: "if u want some real advice, i know a great therapist who also owns a pizzeria. his name's howard and he's a really great doctor! worked wonders on me and my husband with our divorce",
         user_id: 1,
         code_id: null,
-        job_id: 2
+        job_id: 2,
+        interview_id: null
+    },
+    {
+        comment_text: 'this sucks ass',
+        user_id: 1,
+        code_id: null,
+        job_id: null,
+        interview_id: 1
+    },
+    {
+        comment_text: 'gg!',
+        user_id: 1,
+        code_id: null,
+        job_id: null,
+        interview_id: 2
     }
 ];
 
