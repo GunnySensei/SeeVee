@@ -30,17 +30,17 @@
           <li class=" ">
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
-          {{!-- {{#if !loggedIn}} --}}
+          {{#if loggedIn}}
           <li>
               <button id="logout" class="login-btn">LOGOUT</button>
           </li>
-          {{!-- {{else}} --}}
+          {{else}}
           <li>
             <a href="/login">
               <button id="login" class="login-btn">LOGIN</button>
             </a>
           </li>
-          {{!-- {{/if}} --}}
+          {{/if}}
         </ul>
       </nav>
     </header>
@@ -53,9 +53,9 @@
       </footer>
     </div>
 
-    {{!-- {{#if loggedIn}} --}}
+    {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
-    {{!-- {{/if}} --}}
+    {{/if}}
   </body>
 
 </html>

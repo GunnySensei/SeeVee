@@ -23,7 +23,15 @@ router.get("/", (req, res) => {
     ],
   })
     .then((dbCodeData) => {
-      res.json(dbCodeData);
+      console.log("hi");
+      // res.json(dbCodeData);
+
+      const codes = dbCodeData.map((code) => code.get({ plain: true }));
+
+      res.render("coding-challenges", {
+        codes,
+        loggedIn: req.session.loggedIn,
+      });
     })
     .catch((err) => {
       console.log(err);
