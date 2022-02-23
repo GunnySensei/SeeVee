@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { Code, User, Job, Interview, Comment } = require('../models')
-
+const withAuth = require('../utils/auth')
 router.get("/", (req, res) => {
     res.render("homepage");
 });
@@ -14,7 +14,7 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/coding-challenges', (req, res) => {
+router.get('/coding-challenges', withAuth, (req, res) => {
     Code.findAll({
         include: [
             {
@@ -46,7 +46,7 @@ router.get('/coding-challenges', (req, res) => {
     });
 });
 
-router.get('/interview-experiences', (req, res) => {
+router.get('/interview-experiences', withAuth, (req, res) => {
     Interview.findAll({
         include: [
             // {
@@ -79,7 +79,7 @@ router.get('/interview-experiences', (req, res) => {
     });
 });
 
-router.get('/jobs', (req, res) => {
+router.get('/jobs', withAuth, (req, res) => {
     Job.findAll({
         include: [
             {
