@@ -11,10 +11,10 @@
     />
     <title>Prestige Worldwide</title>
   </head>
-  <body>
+  <body class="login-body">
     <!-- header bar, navigation-->
     <header class="container-fluid d-flex">
-      <a href="./html-template.html">
+      <a href="./index.html">
         <img
           class="logo"
           src="../images/PresWorld-LogoColor.png"
@@ -37,44 +37,48 @@
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
           <li>
-            <a href="/login">
-              <button class="login-btn">LOGIN</button>
-            </a>
+            <button class="login-btn">LOGIN</button>
           </li>
         </ul>
       </nav>
     </header>
     <!-- End Header-->
 
-    <article class="homepage-article">
-      <section class="homepage-hero homepage-image">
-        <h1>WELCOME TO PRESTIGE WORLDWIDE</h1>
-      </section>
-
-      <section id="challenges" class="pods">
-        <div class="challenges homepage-image">
-          <h2>CHALLENGES</h2>
-          <a></a>
+    <article class="login-article">
+      <h2 class="login-title">Sign in to your account</h2>
+      <section class="login-card flex-row">
+        <div class="post-text">
+          <h3>Email Address:</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              id="email"
+              name="email"
+              class="form-input"
+            />
+          </form>
+          <h3 class="margin-top">Password:</h3>
+          <form>
+            <input
+              type="text"
+              placeholder="Enter your password"
+              id="password"
+              name="password"
+              class="form-input"
+            />
+          </form>
         </div>
-      </section>
-
-      <section id="experiences" class="pods">
-        <div class="experiences homepage-image">
-          <h2>EXPERIENCES</h2>
-          <a></a>
-        </div>
-      </section>
-
-      <section id="jobs" class="pods">
-        <div class="jobs homepage-image">
-          <h2>JOBS</h2>
-          <a></a>
-        </div>
+        <button class="login-btn margin-top">LOGIN</button>
+        <button class="login-btn margin-top">CREATE AN ACCOUNT</button>
       </section>
     </article>
 
     <footer>
       <section id="footer">Thanks for visiting!</section>
+      <a class="footer-a" href="https://clearbit.com">
+        Logos provided by Clearbit</a
+      >
     </footer>
   </body>
 </html>

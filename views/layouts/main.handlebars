@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <header class="container-fluid d-flex">
       <h1 class=" ">
         <a href="./index.html" >
-            <img class="logo" src="../images/PresWorld-Logo or.png" alt="hot bodied knight boi"/>
+            <img class="logo" src="images\PresWorld-LogoColor.png" alt="hot bodied knight boi"/>
         </a>
       </h1>
       <nav class=" ">
@@ -30,15 +30,15 @@
           <li class=" ">
             <a href="#jobs" style="text-decoration: none">JOBS</a>
           </li>
-          {{#if !loggedIn}}
+          {{!-- {{#if !loggedIn}} --}}
           <li>
               <button id="logout-btn" class="login-btn">LOGOUT</button>
           </li>
-          {{else}}
+          {{!-- {{else}} --}}
           <li>
-              <button id="logout-btn" class="login-btn">LOGOUT</button>
+              <button id="logout-btn" class="login-btn">LOGIN</button>
           </li>
-          {{/if}}
+          {{!-- {{/if}} --}}
         </ul>
       </nav>
     </header>
@@ -51,9 +51,9 @@
       </footer>
     </div>
 
-    {{#if loggedIn}}
+    {{!-- {{#if loggedIn}} --}}
       <script src="/javascript/logout.js"></script>
-    {{/if}}
+    {{!-- {{/if}} --}}
   </body>
 
 </html>
