@@ -71,4 +71,49 @@ router.post('/', (req, res) => {
     });
 });
 
+router.put('/:id', (req, res) => {
+    Interview.update(
+        {
+            company: req.body.company,
+            title: req.body.title,
+            description: req.body.description
+        },
+        {
+            where: {
+                id: req.params.id
+            }
+        }
+    )
+    .then(dbInterviewData => {
+        if (!dbInterviewData) {
+            res.status(404).json({ message: 'No interview associated with this id!' });
+            return;
+        }
+        res.json(dbInterviewData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.delete('/:id', (req, res) => {
+    Interview.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(dbInterviewData => {
+        if (!dbInterviewData) {
+            res.status(404).json({ message: 'No interview matches this query!' });
+            return;
+        }
+        res.json(dbInterviewData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
 module.exports = router;
