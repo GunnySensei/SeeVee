@@ -62,7 +62,7 @@ router.get('/:id', withAuth, (req, res) => {
 });
 
 // POST new Code route
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     Code.create({
         title: req.body.title,
         code_url: req.body.code_url,
