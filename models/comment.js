@@ -41,6 +41,14 @@ Comment.init(
                 model: 'job',
                 key: 'id'
             }
+        },
+        interview_id: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            references: {
+                model: 'interview',
+                key: 'id'
+            }
         }
         
     },

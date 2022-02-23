@@ -5,13 +5,13 @@ const sequelize = require('../../config/connection');
 router.get('/', (req, res) => {
     Interview.findAll({
         include: [
-            // {
-            //     model: Comment,
-            //     include: {
-            //         model: User,
-            //         attributes: ['username']
-            //     }
-            // },
+            {
+                model: Comment,
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
             {
                 model: User,
                 attributes: ['username']
@@ -31,13 +31,13 @@ router.get('/:id', (req, res) => {
             id: req.params.id
         },
         include: [
-            // {
-            //     model: Comment,
-            //     include: {
-            //         model: User,
-            //         attributes: ['username']
-            //     }
-            // },
+            {
+                model: Comment,
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
             {
                 model: User,
                 attributes: ['username']
@@ -51,6 +51,20 @@ router.get('/:id', (req, res) => {
         }
         res.json(dbInterviewData);
     })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.post('/', (req, res) => {
+    Interview.create({
+        company: req.body.company,
+        title: req.body.title,
+        description: req.body.description,
+        user_id: req.session.user_id
+    })
+    .then(dbInterviewData => res.json(dbInterviewData))
     .catch(err => {
         console.log(err);
         res.status(500).json(err);
