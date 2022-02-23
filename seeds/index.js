@@ -1,4 +1,5 @@
 const seedUsers = require('./user-seeds');
+const seedInterview = require('./interview-seeds')
 const seedCodes = require('./code-seeds');
 const seedJobs = require('./job-seeds');
 const seedComments = require('./comment-seeds');
@@ -15,6 +16,8 @@ const seedAll = async () => {
     console.log('Coooooo00000000ooooddde');
     await seedJobs();
     console.log('JJJJJJJOOOOOOOBBBBBSSSSSS');
+    await seedInterview();
+    console.log('iiiinnnnttteeerrrviewwwwwwwssss')
     await seedComments();
     console.log('CoooooOOOOOOOOMMMEEEEEEEEEENTSSSSSSSSSSSSSSSS');
 

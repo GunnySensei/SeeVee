@@ -31,7 +31,6 @@ const commentData = [
         code_id: null,
         job_id: 2
     }
-    
 ];
 
 const seedComments = () => Comment.bulkCreate(commentData);

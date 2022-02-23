@@ -2,13 +2,16 @@ const User = require('./user');
 const Code = require('./code');
 const Job = require('./job');
 const Comment = require('./comment');
+const Interview = require('./interview');
 
 // User associations
 User.hasMany(Code);
 
 User.hasMany(Job);
 
-User.hasMany(Comment);
+User.hasMany(Comment, {
+    foreignKey: 'user_id'
+});
 
 User.belongsToMany(Code, {
     through: Comment,
@@ -22,6 +25,8 @@ User.belongsToMany(Job, {
     foreignKey: 'user_id'
 });
 
+User.hasMany(Interview);
+
 // Code associations
 Code.belongsTo(User, {
     foreignKey: 'user_id'
@@ -33,7 +38,9 @@ Code.belongsToMany(User, {
     foreignKey: 'code_id'
 });
 
-Code.hasMany(Comment);
+Code.hasMany(Comment, {
+    foreignKey: 'code_id'
+});
 
 // Job associations
 Job.belongsTo(User, {
@@ -46,7 +53,12 @@ Job.belongsToMany(User, {
     foreignKey: 'job_id'
 })
 
-Job.hasMany(Comment);
+Job.hasMany(Comment, {
+    foreignKey: 'job_id'
+});
+
+// Interview associations
+Interview.belongsTo(User);
 
 // Comment associations
 Comment.belongsTo(User, {
@@ -64,4 +76,4 @@ Comment.belongsTo(Job, {
 
 
 
-module.exports = { User, Code, Job, Comment };
+module.exports = { User, Code, Job, Comment, Interview };

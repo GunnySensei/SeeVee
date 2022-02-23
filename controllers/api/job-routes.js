@@ -5,13 +5,13 @@ const sequelize = require('../../config/connection');
 router.get('/', (req, res) => {
     Job.findAll({
         include: [
-            // {
-            //     model: Comment,
-            //     include: {
-            //         model: User,
-            //         attributes: ['username']
-            //     }
-            // },
+            {
+                model: Comment,
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
             {
                 model: User,
                 attributes: ['username']
@@ -31,13 +31,13 @@ router.get('/:id', (req, res) => {
             id: req.params.id
         },
         include: [
-            // {
-            //     model: Comment,
-            //     include: {
-            //         model: User,
-            //         attributes: ['username']
-            //     }
-            // },
+            {
+                model: Comment,
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
             {
                 model: User,
                 attributes: ['username']
