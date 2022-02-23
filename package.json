@@ -23,7 +23,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seeds": "node seeds/index.js"
   },
   "description": "This project is licensed under MIT.   ![License](https://img.shields.io/badge/License-MIT-blue.svg)",
   "bugs": {
