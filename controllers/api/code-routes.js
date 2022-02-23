@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Code, User } = require('../../models');
+const { Code, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET all Code route
@@ -50,7 +50,7 @@ router.get('/:id', withAuth, (req, res) => {
         ]
     })
     .then(dbCodeData => {
-        if (dbCodeData) {
+        if (!dbCodeData) {
             res.status(404).json({ message: 'No challenge found with this ID'});
             return;
         }
@@ -65,7 +65,7 @@ router.get('/:id', withAuth, (req, res) => {
 router.post('/', withAuth, (req, res) => {
     Code.create({
         title: req.body.title,
-        code_url: req.body.Code_url,
+        code_url: req.body.code_url,
         user_id: req.session.user_id
     })
     .then(dbCodeData => res.json(dbCodeData))
@@ -76,18 +76,18 @@ router.post('/', withAuth, (req, res) => {
 });
 
 // PUT upvote Code route
-router.put('/upvote', withAuth, (req, res) => {
-    if (req.session) {
-        Code.upvote(
-            { ...req.body, user_id: req.session.user_id },
-            { Vote, Comment, User })
-        .then(updatedVoteDate => res.json(updatedVoteDate))
-        .catch(err => {
-            console.log(err);
-            res.status(418).json(err);
-        });
-    }
-});
+// router.put('/upvote', withAuth, (req, res) => {
+//     if (req.session) {
+//         Code.upvote(
+//             { ...req.body, user_id: req.session.user_id },
+//             { Vote, Comment, User })
+//         .then(updatedVoteDate => res.json(updatedVoteDate))
+//         .catch(err => {
+//             console.log(err);
+//             res.status(418).json(err);
+//         });
+//     }
+// });
 
 // PUT update Code route
 router.put('/:id', withAuth, (req, res) => {

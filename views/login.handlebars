@@ -1,33 +1,29 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
-
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
-
-<script src="/javascript/login.js"></script>
+<article class="login-article">
+  <h2 class="login-title">Sign in to your account</h2>
+  <section class="login-card flex-row">
+    <div class="post-text">
+      <h3>Email Address:</h3>
+      <form>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          id="email"
+          name="email"
+          class="form-input"
+        />
+      </form>
+      <h3 class="margin-top">Password:</h3>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter your password"
+          id="password"
+          name="password"
+          class="form-input"
+        />
+      </form>
+    </div>
+    <button class="login-btn margin-top">LOGIN</button>
+    <button class="login-btn margin-top">CREATE AN ACCOUNT</button>
+  </section>
+</article>
