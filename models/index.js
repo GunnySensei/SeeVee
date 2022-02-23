@@ -70,11 +70,11 @@ Interview.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-Interview.belongsToMany(User, {
-    through: Comment,
-    as: 'interview_comment',
-    foreignKey: 'interview_id'
-});
+// Interview.belongsToMany(User, {
+//     through: Comment,
+//     as: 'interview_comment',
+//     foreignKey: 'interview_id'
+// });
 
 Interview.hasMany(Comment, {
     foreignKey: 'interview_id'
