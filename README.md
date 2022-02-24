@@ -42,9 +42,7 @@
   Contact Info: andrew.derek.wales@gmail.com
 
 
-  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=diirtydog&show_icons=true)
-  
-  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=GunnySensei&show_icons=true)
+  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=diirtydog&show_icons=true)![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=GunnySensei&show_icons=true)
   
   ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Sly-Ry&show_icons=true)
   
