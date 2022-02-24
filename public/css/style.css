@@ -154,6 +154,10 @@ input {
   font-size: 1rem;
 }
 
+.black-color {
+  color: #000000;
+}
+
 .border-round {
   border-radius: 9px;
 }
