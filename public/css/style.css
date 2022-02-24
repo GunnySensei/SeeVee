@@ -1,0 +1,519 @@
+/* || Default Element Styling */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  align-items: center;
+}
+
+button {
+  background-color: #fc2626;
+  border: 0;
+  padding: 0.5rem 0.8rem;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #df2929;
+}
+
+textarea,
+input {
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
+}
+
+header {
+  border-bottom: 1px solid #1c326b;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  background-color: #1c326b;
+}
+
+header h1 {
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: #7098d6;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #333333;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+input::-webkit-input-placeholder {
+  color: #b2b2b2 !important;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b2b2b2 !important;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b2b2b2 !important;
+}
+
+input:-ms-input-placeholder {
+  color: #b2b2b2 !important;
+}
+
+ul {
+  text-decoration: none;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  padding: 1rem;
+  color: #dbdbdb;
+  border: 0;
+}
+
+/* || Class Stylizing */
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+.border-round {
+  border-radius: 9px;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #3486eb;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.upvote-btn {
+  background-color: #197d0f;
+  transition: background-color 0.1s;
+}
+
+.upvote-btn:hover {
+  background-color: #1f9c13;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 4rem;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* || Homepage Specific */
+
+.homepage-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.challenges-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5%;
+}
+
+.interview-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5%;
+}
+
+.account-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5%;
+  height: 100%;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5%;
+  justify-content: center;
+  height: 100%;
+}
+
+.account-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.just-padding {
+  padding: 2rem;
+}
+
+.just-width {
+  width: 100%;
+}
+
+.just-min-width {
+  min-width: 500px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5%;
+  justify-content: center;
+  height: 100%;
+}
+
+.submission-field {
+  background-color: #f0f0f0;
+}
+
+.submission-form {
+  background-color: #f0f0f0;
+}
+
+.login-title {
+  padding-bottom: 15px;
+}
+
+.pods-container {
+  display: flex;
+  justify-content: space-between;
+  width: 97.35%;
+  padding-top: 1.5%;
+}
+
+.pods {
+  display: flex;
+  width: 100%;
+  padding-top: 1.5%;
+}
+
+.homepage-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 32%;
+  color: white;
+}
+
+.homepage-hero {
+  width: 97.35%;
+  padding-top: 1.5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(/images/prestige-hero-background2.jpg);
+  background-size: cover;
+  font-size: 2rem;
+}
+
+.challenges {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/coding.jpg);
+  background-size: cover;
+}
+
+.experiences {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/interview.jpg);
+  background-size: cover;
+}
+
+.resumes {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/resume.jpg);
+  background-size: cover;
+}
+
+.jobs {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/jobs.jpg);
+  background-size: cover;
+}
+
+.challenges-hero {
+  width: 97.35%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/coding.jpg);
+  background-size: cover;
+  font-size: 3rem;
+  height: 200px;
+}
+
+.interview-hero {
+  width: 97.35%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/interview.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 3rem;
+  height: 200px;
+}
+
+.single-page {
+  padding: 2.5rem;
+  max-width: 960px;
+}
+
+.content-card {
+  max-width: 960px;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  min-width: 500px;
+}
+
+.account-card {
+  width: 500px;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.login-body {
+  background-image: url(../../assets/images/PresWorld-LogoBW-2000x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  background-position: -500px 100px;
+}
+
+.post-image {
+  padding-right: 2rem;
+  width: 35%;
+}
+
+.post-text {
+  width: 65%;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 0;
+  font-weight: 500;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.footer-a {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pods-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .homepage-image {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .homepage-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5%;
+  }
+
+  .homepage-hero {
+    width: 97.35%;
+    padding-top: 1.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(../../assets/images/prestige-hero-background2.jpg);
+    background-size: cover;
+    font-size: 2rem;
+  }
+
+  .pods {
+    width: 97.35%;
+    padding-top: 1.5%;
+  }
+} */

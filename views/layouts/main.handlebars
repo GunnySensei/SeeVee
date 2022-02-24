@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Prestige Worldwide</title>
+  </head>
+  <body>
+    <!-- header bar, navigation-->
+    <header class="container-fluid d-flex">
+      <h1>
+        <a href="/" >
+            <img class="logo" src="images\PresWorld-LogoColor.png" alt="hot bodied knight boi"/>
+        </a>
+      </h1>
+      <nav>
+        <ul class="flex-row">
+          <li>
+            <a href="/coding-challenges" style="text-decoration: none">CHALLENGES</a>
+          </li>
+          <li>
+            <a href="/interview-experiences" style="text-decoration: none">EXPERIENCES</a>
+          </li>
+          <li>
+            <a href="/jobs" style="text-decoration: none">JOBS</a>
+          </li>
+          {{#if loggedIn}}
+          <li>
+              <button id="logout" class="login-btn">LOGOUT</button>
+          </li>
+          {{else}}
+          <li>
+            <a href="/login">
+              <button id="login" class="login-btn">LOGIN</button>
+            </a>
+          </li>
+          {{/if}}
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header-->
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
+
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>
