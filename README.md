@@ -24,7 +24,7 @@
   ![Languages](https://img.shields.io/badge/Backend-Bandit-green)
   ## Installation Instructions
   ```bash
-npm install yarn  yarn init  yarn install  yarn start || npm start
+npm install yarn && yarn init && yarn install && yarn start || npm start
 ```
   ## Usage Information
   
@@ -40,7 +40,7 @@ npm install yarn  yarn init  yarn install  yarn start || npm start
   
   ## Contact Information
   ### Team Prestige   
-  Github: https://github.com/diirtydog   
+  Github: [![Andrew Wales](https://contrib.rocks/image?repo=diirtydog)](https://github.com/diirtydog)   
   Contact Info: andrew.derek.wales@gmail.com
 
 
