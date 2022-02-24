@@ -32,6 +32,6 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 app.use(require("./controllers"));
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log(`We will eat ass to pass!`));
 });

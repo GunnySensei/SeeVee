@@ -16,6 +16,7 @@
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
+    "fs": "^0.0.1-security",
     "handlebars": "^4.7.3",
     "jest": "^27.5.1",
     "mysql2": "^2.3.3",

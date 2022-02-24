@@ -33,8 +33,6 @@ User.belongsToMany(Interview, {
     foreignKey: 'user_id'
 });
 
-
-
 // Code associations
 Code.belongsTo(User, {
     foreignKey: 'user_id'
