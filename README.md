@@ -48,12 +48,12 @@ npm install yarn && yarn init && yarn install && yarn start || npm start
   
   jaredtrp@gmail.com[![Jared Worsham](https://contrib.rocks/image?repo=jaredtrp/employee-tracker)](https://github.com/jaredtrp)
   
-  gunnerwagoner@gmail.com[![Gunner Wagoner](https://contrib.rocks/image?repo=GunnySensei/project_prestige_worldwide)](https://github.com/GunnySensei)
-  
   ryan.williams93@aol.com[![Ryan Williams](https://contrib.rocks/image?repo=Sly-Ry/NoSpace)](https://github.com/Sly-Ry)
   
-
-
+  gunnerwagoner@gmail.com[![Gunner Wagoner](https://contrib.rocks/image?repo=GunnySensei/project_prestige_worldwide)](https://github.com/GunnySensei)
+  
+  
+  
   ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=diirtydog&show_icons=true)![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=GunnySensei&show_icons=true)
   
   ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Sly-Ry&show_icons=true)![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=jaredtrp&show_icons=true)
