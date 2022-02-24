@@ -311,6 +311,14 @@ input {
   justify-content: center;
 }
 
+.just-padding {
+  padding: 2rem;
+}
+
+.just-width {
+  width: 100%;
+}
+
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -318,6 +326,14 @@ input {
   padding: 1.5%;
   justify-content: center;
   height: 100%;
+}
+
+.submission-field {
+  background-color: #f0f0f0;
+}
+
+.submission-form {
+  background-color: #f0f0f0;
 }
 
 .login-title {
@@ -464,6 +480,12 @@ input {
 @media screen and (max-width: 768px) {
   .pods-container {
     flex-direction: column;
+    gap: 1rem;
+  }
+
+  .homepage-image {
+    height: 250px;
+    width: 100%;
   }
 }
 

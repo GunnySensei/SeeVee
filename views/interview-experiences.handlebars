@@ -1,33 +1,44 @@
-<section>
-  <h2>Submit Interview Experiences</h2>
+<article class="interview-article">
 
-  <form class="new-interview-form">
-    <div>
-      <label for="title">Title</label>
-      <input type="text" id="title" name="title" />
-    </div>
-    <div>
-      <label for="company">Company</label>
-      <input id="company" name="company" />
-    </div>
-    <div>
-      <label for="description">Description</label>
-      <input id="description" name="description" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+  <section class="interview-hero homepage-image">
+    <h1>INTERVIEW EXPERIENCES</h1>
+  </section>
 
-<section>
-  <h2>Interview Experiences</h2>
-    <ol>
-      {{#each interviews as |interview|}}
-      <li>
-        {{> interview-info interview}}
-      </li>
-      {{/each}}
-    </ol>
-</section>
+  <section class="just-padding">
+    <h2>Submit Interview Experiences</h2>
+
+    <form class="account-form new-interview-form">
+      <div class="post just-width">
+        <label for="title">Title:</label>
+        <input type="text" class="submission-form just-width" id="title" name="title" />
+      </div>
+      <div class="post just-width">
+        <label for="company">Company:</label>
+        <input class="submission-form just-width" id="company" name="company" />
+      </div>
+      <div class="post just-width">
+        <label for="description">Description:</label>
+        <input class="submission-form just-width" id="description" name="description" />
+      </div>
+      <div class="account-button">
+        <button type="submit" class="btn">Create</button>
+      </div>
+
+    </form>
+  </section>
+
+  <section>
+    <h2>Interview Experiences</h2>
+    <p>Help your fellow developer by sharing your experiences interviewing with prospective employers.</p>
+      <div>
+        {{#each interviews as |interview|}}
+        <div>
+          {{> interview-info interview}}
+        </div>
+        {{/each}}
+      </div>
+  </section>
+</article>
 
 {{!-- <article class="homepage-article">
   <section class="experiences-hero homepage-image">
