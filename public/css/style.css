@@ -315,6 +315,10 @@ input {
   width: 100%;
 }
 
+.just-min-width {
+  min-width: 500px;
+}
+
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -425,6 +429,12 @@ input {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  min-width: 500px;
 }
 
 .account-card {
