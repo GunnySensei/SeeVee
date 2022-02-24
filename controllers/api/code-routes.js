@@ -63,16 +63,16 @@ router.get("/:id", withAuth, (req, res) => {
 });
 
 // POST new Code route
-router.post("/", (req, res) => {
-  Code.create({
-    title: req.body.title,
-    code_url: req.body.code_url,
-    user_id: req.session.user_id,
-  })
-    .then((dbCodeData) => res.json(dbCodeData))
-    .catch((err) => {
-      console.log(err);
-      res.status(418).json(err);
+router.post('/', (req, res) => {
+    Code.create({
+        title: req.body.title,
+        code_url: req.body.code_url,
+        user_id: req.session.user_id
+    })
+    .then(dbCodeData => res.json(dbCodeData))
+    .catch(err => {
+        console.log(err);
+        res.status(418).json(err);
     });
 });
 

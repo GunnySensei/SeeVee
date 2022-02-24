@@ -5,6 +5,7 @@ async function newFormHandler(event) {
   const code_url = document.querySelector('input[name="code_url"]').value;
 
   const response = await fetch(`/api/codes`, {
+    
     method: "POST",
     body: JSON.stringify({
       title,
@@ -14,7 +15,7 @@ async function newFormHandler(event) {
       "Content-Type": "application/json",
     },
   });
-
+  console.log('hey');
   if (response.ok) {
     document.location.replace("/coding-challenges");
   } else {

@@ -33,5 +33,9 @@ app.set("view engine", "handlebars");
 app.use(require("./controllers"));
 
 sequelize.sync({ force: false }).then(() => {
+<<<<<<< HEAD
   app.listen(PORT, () => console.log(`Now listening on port: ${PORT}!`));
+=======
+  app.listen(PORT, () => console.log(`How about that 100 bob (0 -)`));
+>>>>>>> 2cf4c73f400d22654d1bcb1e68119451264a3afe
 });

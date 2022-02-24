@@ -3,9 +3,9 @@ const { Code, User, Job, Interview, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", (req, res) => {
-  res.render("homepage", {
-    loggedIn: req.session.loggedIn,
-  });
+    res.render("homepage", {
+        loggedIn: req.session.loggedIn
+    });
 });
 
 router.get("/login", (req, res) => {
