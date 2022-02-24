@@ -23,7 +23,9 @@
   ![Languages](https://img.shields.io/badge/Handlebar-Gangster-orange)
   ![Languages](https://img.shields.io/badge/Backend-Bandit-green)
   ## Installation Instructions
-  NPM install everything
+  ```bash
+npm install yarn  yarn install
+```
   ## Usage Information
   
   <img src="" alt="">
