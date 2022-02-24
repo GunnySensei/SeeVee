@@ -42,9 +42,11 @@ npm install yarn && yarn init && yarn install && yarn start || npm start
   ### Team Prestige   
   Contact Info: 
   
-  andrew.derek.wales@gmail.com [![Andrew Wales](https://contrib.rocks/image?repo=diirtydog/Take-This-Job-And)](https://github.com/diirtydog/Take-This-Job-And)
+  andrew.derek.wales@gmail.com [![Andrew Wales](https://contrib.rocks/image?repo=diirtydog/Take-This-Job-And)](https://github.com/diirtydog)
   
   kevin.j.wilkerson@gmail.com[![Kevin Wilkerson](https://contrib.rocks/image?repo=KevinJWilkerson/team-profile-generator)](https://github.com/KevinJWilkerson)
+  
+  jaredtrp@gmail.com[![Jared Worsham](https://contrib.rocks/image?repo=jaredtrp/employee-tracker)](https://github.com/jaredtrp)
   
 
 
