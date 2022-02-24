@@ -40,7 +40,7 @@ npm install yarn && yarn init && yarn install && yarn start || npm start
   
   ## Contact Information
   ### Team Prestige   
-  Github: [![Andrew Wales](https://contrib.rocks/image?repo=diirtydog)](https://github.com/diirtydog)   
+  Github: [![Andrew Wales](https://contrib.rocks/image?repo=diirtydog/Take-This-Job-And)](https://github.com/diirtydog)   
   Contact Info: andrew.derek.wales@gmail.com
 
 
