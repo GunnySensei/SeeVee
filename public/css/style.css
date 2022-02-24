@@ -311,6 +311,10 @@ input {
   padding: 2rem;
 }
 
+.just-width {
+  width: 100%;
+}
+
 .signup-form {
   display: flex;
   flex-direction: column;
