@@ -40,12 +40,8 @@ npm install yarn && yarn init && yarn install && yarn start || npm start
   
   ## Contact Information
   ### Team Prestige   
-  Github: [![Andrew Wales](https://contrib.rocks/image?repo=diirtydog/Take-This-Job-And)](https://github.com/diirtydog)
-  [![Gunner Wagoner](https://contrib.rocks/image?repo=GunnySensei/project_prestige_worldwide)](https://github.com/GunnySensei)
-  [![Ryan Williams](https://contrib.rocks/image?repo=Sly-Ry/NoSpace)](https://github.com/Sly-Ry)
-  [![Jared Worsham](https://contrib.rocks/image?repo=jaredtrp/employee-tracker)](https://github.com/jaredtrp)
-  [![Kevin Wilkerson](https://contrib.rocks/image?repo=KevinJWilkerson/team-profile-generator)](https://github.com/KevinJWilkerson)
-  Contact Info: andrew.derek.wales@gmail.com
+  Github:
+  Contact Info: andrew.derek.wales@gmail.com [![andrew.derek.wales@gmail.com](https://contrib.rocks/image?repo=diirtydog/Take-This-Job-And)](https://github.com/diirtydog/Take-This-Job-And)
 
 
   ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=diirtydog&show_icons=true)![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=GunnySensei&show_icons=true)
