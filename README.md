@@ -24,7 +24,7 @@
   ![Languages](https://img.shields.io/badge/Backend-Bandit-green)
   ## Installation Instructions
   ```bash
-npm install yarn  yarn install
+npm install yarn  yarn init  yarn install  yarn start || npm start
 ```
   ## Usage Information
   
