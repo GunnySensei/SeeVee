@@ -25,6 +25,7 @@
   ## Installation Instructions
   ```bash
 npm install yarn && yarn init && yarn install && yarn start || npm start
+```
   ## Usage Information
   
  <img src="public\images\Screenshot (33).png" alt="">
