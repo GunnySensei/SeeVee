@@ -132,6 +132,16 @@ ul {
   text-decoration: none;
 }
 
+label {
+  font-weight: 700;
+}
+
+input {
+  padding: 1rem;
+  color: #dbdbdb;
+  border: 0;
+}
+
 /* || Class Stylizing */
 
 .flex-row {
@@ -232,11 +242,11 @@ ul {
 }
 
 .edit-post-form {
-  margin-bottom: 5%;
+  margin-bottom: 1rem;
 }
 
 .logo {
-  max-width: 18%;
+  max-width: 4rem;
 }
 
 .post-list {
@@ -273,7 +283,32 @@ ul {
   padding: 1.5%;
 }
 
-.login-article {
+.account-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5%;
+  height: 100%;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5%;
+  justify-content: center;
+  height: 100%;
+}
+
+.account-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,18 +397,18 @@ ul {
   border-radius: 9px;
   padding: 2.5rem;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
-.login-card {
+.account-card {
   width: 500px;
   background-color: #f0f0f0;
   border-radius: 9px;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 1rem;
 }
