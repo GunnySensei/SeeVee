@@ -4,7 +4,7 @@
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Video Link Screencastify link: 
-  <img src="" alt="">
+  <img src="public\images\Untitled_ Feb 23, 2022 10_10 PM.gif" alt="giffy">
 
   ## Table of Contents
   - [Description](#description-of-the-repository)
@@ -25,10 +25,9 @@
   ## Installation Instructions
   ```bash
 npm install yarn && yarn init && yarn install && yarn start || npm start
-```
   ## Usage Information
   
-  <img src="" alt="">
+ <img src="public\images\Screenshot (33).png" alt="">
 
   ## Contributions
   [![Gunner Wagoner](https://contrib.rocks/image?repo=GunnySensei/project_prestige_worldwide)](https://github.com/GunnySensei/project_prestige_worldwide)
