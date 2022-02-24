@@ -1,14 +1,16 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
+  const company = document.querySelector('input[name="company"]').value;
   const title = document.querySelector('input[name="title"]').value;
-  const code_url = document.querySelector('input[name="code_url"]').value;
+  const description = document.querySelector('input[name="description"]').value;
 
-  const response = await fetch(`/api/codes`, {
+  const response = await fetch(`/api/interviews`, {
     method: "POST",
     body: JSON.stringify({
+      company,
       title,
-      code_url,
+      description,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -16,12 +18,12 @@ async function newFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace("/coding-challenges");
+    document.location.replace("/interview-experiences");
   } else {
     alert(response.statusText);
   }
 }
 
 document
-  .querySelector(".new-challenge-form")
+  .querySelector(".new-interview-form")
   .addEventListener("submit", newFormHandler);
