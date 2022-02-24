@@ -44,10 +44,8 @@
 
   ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=diirtydog&show_icons=true)![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=GunnySensei&show_icons=true)
   
-  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Sly-Ry&show_icons=true)
+  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Sly-Ry&show_icons=true)![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=jaredtrp&show_icons=true)
   
-  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=jaredtrp&show_icons=true)
-  
-  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=KevinJWilkerson&show_icons=true)
+                                                  ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=KevinJWilkerson&show_icons=true)
 
 
