@@ -1,9 +1,23 @@
 const router = require('express').Router();
-const { Interview, User, Comment } = require('../../models');
-const sequelize = require('../../config/connection');
+const { Interview, User, Comment, Vote } = require('../../models');
+const { sequelize } = require('../../config/connection');
+const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     Interview.findAll({
+        attributes: [
+            "id",
+            "title",
+            "code_url",
+            "user_id",
+            [
+              sequelize.literal(
+                "(SELECT COUNT(*) FROM vote WHERE code.id = vote.code_id)"
+              ),
+              "vote_count",
+            ],
+          ],
+          order: [["created_at", "DESC"]],
         include: [
             {
                 model: Comment,
@@ -25,11 +39,25 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/:id', (req, res) => {
+// GET single Interview route
+router.get('/:id', withAuth, (req, res) => {
     Interview.findOne({
         where: {
             id: req.params.id
         },
+        attributes: [
+            "id",
+            "title",
+            "code_url",
+            "user_id",
+            [
+              sequelize.literal(
+                "(SELECT COUNT(*) FROM vote WHERE code.id = vote.code_id)"
+              ),
+              "vote_count",
+            ],
+          ],
+          order: [["created_at", "DESC"]],
         include: [
             {
                 model: Comment,
@@ -57,6 +85,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// POST new Interview route
 router.post('/', (req, res) => {
     Interview.create({
         company: req.body.company,
@@ -71,7 +100,18 @@ router.post('/', (req, res) => {
     });
 });
 
-router.put('/:id', (req, res) => {
+// PUT upvote Interview route
+router.put("/upvote", withAuth, (req, res) => {
+    Vote.create({
+      user_id: req.session.user_id,
+      code_id: req.body.code_id,
+    })
+      .then((dbCodeData) => res.json(dbCodeData))
+      .catch((err) => res.json(err));
+});
+
+// PUT update Interview route
+router.put('/:id', withAuth, (req, res) => {
     Interview.update(
         {
             company: req.body.company,
@@ -97,11 +137,10 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+// DELETE remove Interview route
+router.delete('/:id', withAuth, (req, res) => {
     Interview.destroy({
-        where: {
-            id: req.params.id
-        }
+        where: { id: req.params.id }
     })
     .then(dbInterviewData => {
         if (!dbInterviewData) {
