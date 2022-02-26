@@ -12,12 +12,12 @@ router.get('/', (req, res) => {
             "user_id",
             [
               sequelize.literal(
-                "(SELECT COUNT(*) FROM vote WHERE code.id = vote.code_id)"
+                "(SELECT COUNT(*) FROM vote WHERE interview.id = vote.interview_id)"
               ),
               "vote_count",
             ],
           ],
-          order: [["created_at", "DESC"]],
+          order: [["created_at", "ASC"]],
         include: [
             {
                 model: Comment,
@@ -52,7 +52,7 @@ router.get('/:id', withAuth, (req, res) => {
             "user_id",
             [
               sequelize.literal(
-                "(SELECT COUNT(*) FROM vote WHERE code.id = vote.code_id)"
+                "(SELECT COUNT(*) FROM vote WHERE interview.id = vote.interview_id)"
               ),
               "vote_count",
             ],
