@@ -3,6 +3,7 @@ const Code = require('./code');
 const Job = require('./job');
 const Comment = require('./comment');
 const Interview = require('./interview');
+const Vote = require('./vote');
 
 // User associations
 User.hasMany(Code);
@@ -12,6 +13,10 @@ User.hasMany(Job);
 User.hasMany(Interview);
 
 User.hasMany(Comment, {
+    foreignKey: 'user_id'
+});
+
+User.hasMany(Vote, {
     foreignKey: 'user_id'
 });
 
@@ -48,6 +53,10 @@ Code.hasMany(Comment, {
     foreignKey: 'code_id'
 });
 
+Code.hasMany(Vote, {
+    foreignKey: 'code_id'
+});
+
 // Job associations
 Job.belongsTo(User, {
     foreignKey: 'user_id'
@@ -63,6 +72,10 @@ Job.hasMany(Comment, {
     foreignKey: 'job_id'
 });
 
+Job.hasMany(Vote, {
+    foreignKey: 'job_id'
+});
+
 // Interview associations
 Interview.belongsTo(User, {
     foreignKey: 'user_id'
@@ -75,6 +88,10 @@ Interview.belongsTo(User, {
 // });
 
 Interview.hasMany(Comment, {
+    foreignKey: 'interview_id'
+});
+
+Interview.hasMany(Vote, {
     foreignKey: 'interview_id'
 });
 
@@ -95,6 +112,68 @@ Comment.belongsTo(Interview, {
     foreignKey: 'interview_id'
 });
 
+// Vote associations
+// Code
+User.belongsToMany(Code, {
+    through: Vote,
+    as: 'voted_codes',
+    foreignKey: 'user_id'
+});
 
+Code.belongsToMany(User, {
+    through: Vote,
+    as: 'voted_codes',
+    foreignKey: 'code_id'
+});
 
-module.exports = { User, Code, Job, Comment, Interview };
+Vote.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+Vote.belongsTo(Code, {
+    foreignKey: 'code_id'
+});
+
+// Job
+User.belongsToMany(Job, {
+    through: Vote,
+    as: 'voted_jobs',
+    foreignKey: 'user_id'
+});
+
+Job.belongsToMany(User, {
+    through: Vote,
+    as: 'voted_jobs',
+    foreignKey: 'job_id'
+});
+
+Vote.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+Vote.belongsTo(Job, {
+    foreignKey: 'job_id'
+});
+
+// Interview
+User.belongsToMany(Interview, {
+    through: Vote,
+    as: 'voted_interviews',
+    foreignKey: 'user_id'
+});
+
+Interview.belongsToMany(User, {
+    through: Vote,
+    as: 'voted_interviews',
+    foreignKey: 'interview_id'
+});
+
+Vote.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+Vote.belongsTo(Interview, {
+    foreignKey: 'interview_id'
+});
+
+module.exports = { User, Code, Job, Comment, Interview, Vote };
