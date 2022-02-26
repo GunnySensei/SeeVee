@@ -1,33 +1,63 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
+<article class="account-article">
+  <div class="account-card">
+    <form class="login-form account-form">
+      <h3 style="padding-bottom: .5rem">Log in to your account:</h3>
+      <div>
+        <label for="email-login">Email:</label><br />
+        <input
+          placeholder="Enter your email address"
+          class="login-form"
+          type="text"
+          id="email-login"
+        />
+      </div>
+      <div>
+        <label for="password-login">Password:</label><br />
+        <input
+          placeholder="Enter your password"
+          class="edit-post-form"
+          type="password"
+          id="password-login"
+        />
+      </div>
+      <div class="account-button">
+        <button class="edit-post-form" type="submit">LOGIN</button>
+      </div>
+    </form>
+    <h3 style="padding-bottom: .5rem">Sign up for an account:</h3>
+    <form class="signup-form account-form">
+      <div>
+        <label for="username-signup">Username:</label><br />
+        <input
+          class="edit-post-form"
+          placeholder="Create a username"
+          type="text"
+          id="username-signup"
+        />
+      </div>
+      <div>
+        <label for="email-signup">Email:</label><br />
+        <input
+          placeholder="Add an email address"
+          class="edit-post-form"
+          type="text"
+          id="email-signup"
+        />
+      </div>
+      <div>
+        <label for="password-signup">Password:</label><br />
+        <input
+          placeholder="Add a password"
+          class="edit-post-form"
+          type="password"
+          id="password-signup"
+        />
+      </div>
+      <div class="account-button">
+        <button type="submit">SIGNUP</button>
+      </div>
+    </form>
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
+    <script src="/javascript/login.js"></script>
   </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
-
-<script src="/javascript/login.js"></script>
+</article>
