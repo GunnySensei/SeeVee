@@ -3,18 +3,17 @@
     <a href="{{code_url}}" target="_blank"><h3
         style="color: black"
       >{{title}}</h3></a>
-    <button class="upvote-btn">Helpful: {{vote_count}}</button>
+    <button id="{{id}}" class="upvote-btn">helpful: {{vote_count}}</button>
     <p>Submitted by:
       {{user.username}}
       | on:
       {{createdAt}}
     </p>
-    <button class="delete-btn">Delete</button>
-    <button class="edit-btn">Edit</button>
+    <button class="delete-btn">delete</button>
+    <button class="edit-btn">edit</button>
   </div>
 </section>
 
 {{!-- {{> comments code.comments}} --}}
 
 {{! <script src="/javascript/comment.js"></script> }}
-<script src="/javascript/upvote-code.js"></script>

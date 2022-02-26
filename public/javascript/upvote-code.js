@@ -2,9 +2,9 @@ async function upvoteClickHandler(event) {
   event.preventDefault();
   console.log("upvoted!");
 
-  const id = window.location.toString().split("/")[
-    window.location.toString().split("/").length - 1
-  ];
+  const id = event.srcElement.id;
+
+  console.log(id);
   const response = await fetch("/api/codes/upvote", {
     method: "PUT",
     body: JSON.stringify({
@@ -15,11 +15,11 @@ async function upvoteClickHandler(event) {
     },
   });
 
-  if (response.ok) {
-    document.location.reload();
-  } else {
-    alert(response.statusText);
-  }
+  // if (response.ok) {
+  //   document.location.reload();
+  // } else {
+  //   alert(response.statusText);
+  // }
 }
 
 document
