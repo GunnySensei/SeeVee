@@ -1,11 +1,24 @@
 const router = require("express").Router();
-const { Code, User, Comment } = require("../../models");
+const { Code, User, Comment, Vote } = require("../../models");
+const { sequelize } = require("../../models/user");
 const withAuth = require("../../utils/auth");
 
 // GET all Code route
 router.get("/", (req, res) => {
   console.log("<3<3<3<3<3<3<3<3<3<3<3<3<3<3");
   Code.findAll({
+    attributes: [
+      "id",
+      "title",
+      "code_url",
+      "user_id",
+      [
+        sequelize.literal(
+          "(SELECT COUNT(*) FROM vote WHERE code.id = vote.code_id)"
+        ),
+        "vote_count",
+      ],
+    ],
     order: [["created_at", "DESC"]],
     include: [
       {
@@ -33,6 +46,18 @@ router.get("/", (req, res) => {
 router.get("/:id", withAuth, (req, res) => {
   Code.findOne({
     where: { id: req.params.id },
+    attributes: [
+      "id",
+      "title",
+      "code_url",
+      "user_id",
+      [
+        sequelize.literal(
+          "(SELECT COUNT(*) FROM vote WHERE code.id = vote.code_id)"
+        ),
+        "vote_count",
+      ],
+    ],
     order: [["created_at", "DESC"]],
     include: [
       {
@@ -77,18 +102,14 @@ router.post("/", (req, res) => {
 });
 
 // PUT upvote Code route
-// router.put('/upvote', withAuth, (req, res) => {
-//     if (req.session) {
-//         Code.upvote(
-//             { ...req.body, user_id: req.session.user_id },
-//             { Vote, Comment, User })
-//         .then(updatedVoteDate => res.json(updatedVoteDate))
-//         .catch(err => {
-//             console.log(err);
-//             res.status(418).json(err);
-//         });
-//     }
-// });
+router.put("/upvote", withAuth, (req, res) => {
+  Vote.create({
+    user_id: req.session.user_id,
+    code_id: req.body.code_id,
+  })
+    .then((dbCodeData) => res.json(dbCodeData))
+    .catch((err) => res.json(err));
+});
 
 // PUT update Code route
 router.put("/:id", withAuth, (req, res) => {
