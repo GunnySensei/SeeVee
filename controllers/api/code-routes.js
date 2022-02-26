@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Code, User, Comment } = require("../../models");
+const { Code, User, Comment, Vote } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 // GET all Code route
@@ -77,18 +77,14 @@ router.post('/', (req, res) => {
 });
 
 // PUT upvote Code route
-// router.put('/upvote', withAuth, (req, res) => {
-//     if (req.session) {
-//         Code.upvote(
-//             { ...req.body, user_id: req.session.user_id },
-//             { Vote, Comment, User })
-//         .then(updatedVoteDate => res.json(updatedVoteDate))
-//         .catch(err => {
-//             console.log(err);
-//             res.status(418).json(err);
-//         });
-//     }
-// });
+router.put('/upvote', withAuth, (req, res) => {
+  Vote.create({
+    user_id: req.session.user_id,
+    code_id: req.body.code_id
+  })
+  .then(dbCodeData => res.json(dbCodeData))
+  .catch(err => res.json(err));
+});
 
 // PUT update Code route
 router.put("/:id", withAuth, (req, res) => {
